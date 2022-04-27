@@ -1,19 +1,19 @@
 # WebSocketChatDemo
 [中文](README-CN.md)
 
-本项目使用`SpringBoot`实现了一个简单的多人聊天应用。
+This project uses `SpringBoot` to implement a simple multi-person chat application.
 
-### 使用步骤
-* 运行项目
-* 通过浏览器（必须支持`WebSocket`）打开项目URL
-* 输入昵称
-* 收发信息
+### Steps for usage
+* startup the project
+* Open the project URL through a browser (must support `WebSocket`)
+* Enter nickname
+* Send and receive messages
 
-### 应用截图
+### Screenshots
 
-昵称输入
+Nickname input
 ![img.png](doc-img/1.png)
 
-聊天页面
+Chat page
 ![img.png](doc-img/2.png)
 ![](doc-img/3.jpg)
