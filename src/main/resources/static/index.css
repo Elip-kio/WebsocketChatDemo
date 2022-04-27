@@ -1,0 +1,9 @@
+.screen {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen.active {
+    display: block;
+}

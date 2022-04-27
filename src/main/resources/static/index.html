@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>多人在线聊天室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body style="background-color: #70a1ff;">
+    <h1 class="text-center py-36" id="loading">Loading...</h1>
+    <section class="screen" style="background-color: #70a1ff;" id="launch">
+        <h2 class="text-3xl font-bold text-center pt-36 pb-16 text-white text-shadow">Type your nickname here</h2>
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <input class="outline-none mx-auto w-96 block px-4 py-2 rounded text-xl" id="nickname" placeholder="your name"
+            maxlength="16" />
+
+        <div class="text-center pt-16">
+            <button id="getStart" class="rounded shadow active:shadow-none trnasition text-white text-lg px-4 py-2"
+                style="background-color: #ffa502;">Get Started</button>
+        </div>
+    </section>
+    <section id="chat" style="background-color: #70a1ff;" class="screen">
+        <div class="flex">
+            <div class="h-screen w-64 shadow flex flex-col">
+                <h4 id="userListTitle" class="text-white p-4 font-bold shadow text-center"
+                    style="background-color: #5a88dc;">👷‍♀️
+                    Online Users（36）</h4>
+                <ul id="userList" class="p-4 text-gray-100 cursor-pointer flex-1 overflow-scroll">
+                </ul>
+            </div>
+            <div class="h-screen flex-1 flex flex-col">
+                <h4 class="text-white p-4 font-bold shadow text-center" id="meTitle" style="background-color: #5a88dc;">
+                    🌍
+                    Wales</h4>
+                <ul class="w-full flex-1 overflow-scroll shadow" id="msgList">
+                </ul>
+                <div class="relative h-64 overflow-hidden">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <textarea id="msgInput" class="block w-full h-full bg-transparent outline-none px-4 pt-4 mb-96"
+                        style="resize: none;"></textarea>
+                    <button id="send"
+                        class="absolute active:shadow-none transition right-8 bottom-8 z-10 text-white px-4 py-1 rounded-full shadow"
+                        style="background-color: #22417b;">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
